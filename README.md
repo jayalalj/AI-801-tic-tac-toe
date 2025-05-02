@@ -5,11 +5,11 @@ AI 801 (Foundations of Artificial Intelligence)
 Python version 3.11
 
 Python Packges neded
-collections
-math
-random
-time
-pandas
+- collections
+- math
+- random
+- time
+- pandas
 
 
 To Run already configured simulations.
@@ -36,9 +36,18 @@ play_game(
            verbose=False
        )
 ```
-Explanation:
 game: You define the game (in this case, a TwoMoveTicTacToe with specific dimensions and conditions).
 
 strategies: You specify the agents for the two players (X and O). For instance, you could have X use the minimax_search_alpha_beta_prune_hct strategy and O use a random_player.
 
 verbose: If set to True, it will display the game board between each move.
+
+
+###strategies
+   - minmax with Basic Heuristic
+   - minmax with Monte Carlo Heuristic
+   - greedy
+     
+
+see code examples to configure different parameters for different strategies in the notebook
+
