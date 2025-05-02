@@ -21,9 +21,9 @@ use play game interface:
 play_game(game, strategies: dict, verbose=False):
 ```
 
-- Parmeter 1 : game board with desired configuration
-- parameter 2: dictionary containing two agents.
-- Parameter 3: To display the game board between moves.
+- Parmeter 1(game) : game board with desired configuration
+- parameter 2 (strategies) : dictionary containing two agents.
+- Parameter 3 (verbose) : To display the game board between moves.
 ex:
 ```python
 play_game(
@@ -36,3 +36,9 @@ play_game(
            verbose=False
        )
 ```
+Explanation:
+game: You define the game (in this case, a TwoMoveTicTacToe with specific dimensions and conditions).
+
+strategies: You specify the agents for the two players (X and O). For instance, you could have X use the minimax_search_alpha_beta_prune_hct strategy and O use a random_player.
+
+verbose: If set to True, it will display the game board between each move.
